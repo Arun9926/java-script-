@@ -43,16 +43,54 @@
       //   obj.style.fontSize = "30px";
       //   obj.style.width = "150px";
       // }
-      function display() {
-        let obj = document.getElementById("te");
-        obj.style.color = "red";
-        obj.style.backgroundColor = "yellow";
-        obj.style.border = "3px solid green";
-        obj.style.boxShadow = "5px 5px";
-        obj.style.padding = "5px";
-        obj.style.fontSize = "20px";
+      // function display() {
+      //   let obj = document.getElementById("te");
+      //   obj.style.color = "red";
+      //   obj.style.backgroundColor = "yellow";
+      //   obj.style.border = "3px solid green";
+      //   obj.style.boxShadow = "5px 5px";
+      //   obj.style.padding = "5px";
+      //   obj.style.fontSize = "20px";
+      // }
+      //----------------------------------------------------------------
+
+      // function add() {
+      //   let obj = document.createElement("button");
+      //   obj.innerHTML = "save";
+      //   document.body.appendChild(obj);
+      // }
+
+      // function data() {
+      //   let obj = document.createElement("p");
+      //   obj.innerHTML = "Enetr Subject: <input type='text'>";
+      //   document.getElementById("box").appendChild(obj);
+      // }
+      // function remove_ele() {
+      //   document.getElementById("demo").remove();
+      // }
+      // function data() {
+      //   let obj = document.createElement("p");
+      //   obj.innerHTML = "Enetr Subject: <input type='text'>";
+      //   document.getElementById("box").appendChild(obj);
+      // }
+      function addElement() {
+        let obj = document.createElement("rem");
+        obj.innerHTML =
+          "<br />Enetr city: <input type='text' id='in'><button onclick='remove()' id='in'>Remove</button><br/>";
+        document.getElementById("rem").appendChild(obj);
+      }
+      function remove() {
+        let obj1 = document.getElementById("in").remove();
       }
     </script>
+    <style>
+      #rem {
+        height: auto;
+        width: auto;
+        padding: 20px;
+        border: 3px solid lightblue;
+      }
+    </style>
   </head>
   <body>
     <!-- <button onclick="display()">Click here</button>
@@ -80,8 +118,25 @@
     </p> -->
     <!-- ----------------------------------------------------------------------- -->
 
-    <button onclick="display()">click here</button>
+    <!-- <button onclick="display()">click here</button> -->
     <!-- <div id="box">we are web developer</div> -->
-    <input type="text" name="" id="te" placeholder="welcome" />
+    <!-- <input type="text" name="" id="te" placeholder="welcome" /> -->
+
+    <!-- =================================================================== -->
+    <!-- CREATE ELEMENT IN DOM -->
+    <!-- ==================================================================== -->
+    <!-- <button onclick="add()">click here</button> -->
+    <!-- <button onclick="data()">click here</button>
+    <br /><br />
+    <div id="box">
+      <p>Enetr Subject: <input type="text" /></p>
+    </div> -->
+
+    <!-- <button onclick="remove_ele()"></button>
+    <h1 id="demo">welcome to bhopal</h1> -->
+
+    <button onclick="addElement()"></button>
+    <br />
+    <p id="rem">Enter city: <input type="text" /></p>
   </body>
 </html>

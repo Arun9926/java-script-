@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box {
+        width: 320px;
+        border: 3px solid lightskyblue;
+        padding: 30px;
+        margin: auto;
+        background-color: rgb(226, 239, 235);
+      }
+      #txtbox {
+        width: 300px;
+        height: 50px;
+        border: 2px solid black;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: rgb(164, 138, 138);
+        margin: auto;
+      }
+      button {
+        padding: 10px;
+        font-size: 30px;
+        color: blue;
+        margin: 10px;
+        background-color: rgb(177, 121, 121);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <input type="text" id="txtbox" />
+      <button
+        id="btn1"
+        onclick="document.getElementById('txtbox').value+=document.getElementById('btn1').innerHTML"
+      >
+        1
+      </button>
+      <button
+        id="btn2"
+        onclick="document.getElementById('txtbox').value+=document.getElementById('btn2').innerHTML"
+      >
+        2
+      </button>
+      <button
+        id="btn3"
+        onclick="document.getElementById('txtbox').value+=document.getElementById('btn3').innerHTML"
+      >
+        3
+      </button>
+      <button
+        id="btn4"
+        onclick="document.getElementById('txtbox').value+=document.getElementById('btn4').innerHTML"
+      >
+        4
+      </button>
+      <button
+        id="btn5"
+        onclick="document.getElementById('txtbox').value+=document.getElementById('btn5').innerHTML"
+      >
+        5
+      </button>
+      <button
+        id="btn6"
+        onclick="document.getElementById('txtbox').value+=document.getElementById('btn6').innerHTML"
+      >
+        6
+      </button>
+      <button
+        id="btn7"
+        onclick="document.getElementById('txtbox').value+=document.getElementById('btn7').innerHTML"
+      >
+        7
+      </button>
+      <button
+        id="btn8"
+        onclick="document.getElementById('txtbox').value+=document.getElementById('btn8').innerHTML"
+      >
+        8
+      </button>
+      <button
+        id="btn9"
+        onclick="document.getElementById('txtbox').value+=document.getElementById('btn9').innerHTML"
+      >
+        9
+      </button>
+      <button
+        id="btn10"
+        onclick="document.getElementById('txtbox').value+=document.getElementById('btn10').innerHTML"
+      >
+        +
+      </button>
+      <button
+        id="btn11"
+        onclick="document.getElementById('txtbox').value+=document.getElementById('btn11').innerHTML"
+      >
+        -
+      </button>
+      <button
+        id="btn12"
+        onclick="document.getElementById('txtbox').value+=document.getElementById('btn12').innerHTML"
+      >
+        /
+      </button>
+      <button
+        id="btn13"
+        onclick="document.getElementById('txtbox').value+=document.getElementById('btn13').innerHTML"
+      >
+        *
+      </button>
+      <button>=</button>
+    </div>
+  </body>
+</html>
