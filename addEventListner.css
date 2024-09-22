@@ -1,0 +1,27 @@
+div {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(86, 167, 98);
+  padding: 40px;
+  border: 10px double rgb(163, 40, 7);
+}
+input {
+  /* width: 200px; */
+  height: 20px;
+  background-color: rgb(214, 185, 141);
+  color: black;
+  border-radius: 20px;
+  font-size: 20px;
+}
+button {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(187, 96, 26);
+  color: black;
+  border-radius: 20px;
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
