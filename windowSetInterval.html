@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #line {
+        width: 10px;
+        height: 10px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p id="demo">Hello friend</p> -->
+    <!-- ------------------------------------------------------------ -->
+    <!-- <h1 id="h">Hello</h1> -->
+    <!-- ------------------------------------------------------------ -->
+    <!-- <p id="de">Hello</p>
+    <button onclick="myStop()">stop</button> -->
+    <!-- ------------------------------------------------------------ -->
+
+    <button onclick="startNow()">Start</button>
+    <button onclick="stop()">stop</button>
+    <br /><br />
+    <div id="line"></div>
+
+    <script>
+      // function display() {
+      //   document.getElementById("demo").innerHTML = "Welcome to Bhopal";
+      // }
+      // setInterval(display, 1000);
+      //-------------------------------------------------------------
+
+      //   function date() {
+      //     const d = new Date();
+      //     document.getElementById("h").innerHTML = d;
+      //   }
+      //   setInterval(date, 1000);
+      //-------------------------------------------------------------
+
+      //   function display() {
+      //     document.getElementById("de").innerHTML += "Welcome to Bhopal";
+      //   }
+      //   var myInt = setInterval(display, 1000);
+      //   function myStop() {
+      //     clearInterval(myInt);
+      //   }
+      // ---------------------------------------------------------------
+
+      let mywidth = 10;
+      let myint;
+
+      function mycal() {
+        let obj = document.getElementById("line");
+        obj.style.width = mywidth + "px";
+        mywidth = mywidth + 1;
+      }
+      function startNow() {
+        myint = setInterval(mycal, 10);
+      }
+      function stop() {
+        clearInterval(myint);
+      }
+    </script>
+  </body>
+</html>
