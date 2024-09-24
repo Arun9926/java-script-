@@ -21,10 +21,23 @@
     <button onclick="myStop()">stop</button> -->
     <!-- ------------------------------------------------------------ -->
 
-    <button onclick="startNow()">Start</button>
+    <!-- <button onclick="startNow()">Start</button>
     <button onclick="stop()">stop</button>
     <br /><br />
-    <div id="line"></div>
+    <div id="line"></div> -->
+
+    <!-- ------------------------------------------------------------ -->
+
+    <!-- <button id="btn1">start</button>
+    <button id="btn2">stop</button>
+    <button id="btn3">clear</button>
+    <h1 id="ans">0</h1> -->
+
+    <!-- ========================================================== -->
+    <!-- WINDOW SET TIME OUT -->
+    <!-- ========================================================== -->
+    <h1 id="demo">Welcome to bhopal</h1>
+    <button onclick="stopnow()">stop</button>
 
     <script>
       // function display() {
@@ -49,19 +62,55 @@
       //   }
       // ---------------------------------------------------------------
 
-      let mywidth = 10;
-      let myint;
+      // let mywidth = 10;
+      // let myint;
 
-      function mycal() {
-        let obj = document.getElementById("line");
-        obj.style.width = mywidth + "px";
-        mywidth = mywidth + 1;
+      // function mycal() {
+      //   let obj = document.getElementById("line");
+      //   obj.style.width = mywidth + "px";
+      //   mywidth = mywidth + 1;
+      // }
+      // function startNow() {
+      //   myint = setInterval(mycal, 10);
+      // }
+      // function stop() {
+      //   clearInterval(myint);
+      // }
+
+      // -------------------------------------------------------------------
+
+      // document.getElementById("btn1").addEventListener("click", myStar);
+      // document.getElementById("btn2").addEventListener("click", myStop);
+      // document.getElementById("btn3").addEventListener("click", myClear);
+
+      // var myInt;
+      // function cal() {
+      //   let myval = Number(document.getElementById("ans").innerHTML);
+      //   myval++;
+      //   document.getElementById("ans").innerHTML = myval;
+      // }
+      // function myStar() {
+      //   myInt = setInterval(cal, 1000);
+      // }
+      // function myStop() {
+      //   clearInterval(myInt);
+      // }
+      // function myClear() {
+      //   document.getElementById("ans").innerHTML = 0;
+      // }
+
+      // -----------------------------------------------------------------
+      //WINDOW SET TIME OUT
+      // ---------------------------------------------------------------------
+      var myInt;
+      function myFun() {
+        document.getElementById("demo").innerHTML +=
+          " Happy birthday my friend";
       }
-      function startNow() {
-        myint = setInterval(mycal, 10);
-      }
-      function stop() {
-        clearInterval(myint);
+      myInt = setTimeout(myFun, 5000);
+
+      function stopnow() {
+        clearTimeout(myInt);
       }
     </script>
   </body>
