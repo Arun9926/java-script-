@@ -1,6 +1,6 @@
-document.getElementById("Setbtn").addEventListener("click", dataSet);
-document.getElementById("Getbtn").addEventListener("click", dataGet);
-document.getElementById("Clearbtn").addEventListener("click", dataClear);
+document.getElementById("setbtn").addEventListener("click", dataSet);
+document.getElementById("getbtn").addEventListener("click", dataGet);
+document.getElementById("clearbtn").addEventListener("click", dataClear);
 
 function dataSet() {
   let myFnm = document.getElementById("fnm").value;
@@ -10,8 +10,8 @@ function dataSet() {
   alert("Your data set in local storage");
 }
 function dataGet() {
-  let firstnm = document.getElementById("firstName");
-  let lastnm = document.getElementById("lastName");
+  let firstnm = window.localStorage.getItem("firstName");
+  let lastnm = window.localStorage.getItem("lastName");
   document.getElementById("ans").innerHTML =
     "Hi i am " + firstnm + " " + lastnm + " from bhopal";
 }
